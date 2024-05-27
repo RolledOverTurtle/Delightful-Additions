@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "farmersdelight:minced_beef"
+    },
+    "C": {
+      "item": "delightfuladditions:cheese"
+    },
+    "D": {
+      "item": "farmersdelight:wheat_dough"
+    },
+    "T": {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  },
+  "pattern": [
+    "BTB",
+    "CDC"
+  ],
+  "result": {
+    "item": "delightfuladditions:raw_pepperoni_pizza"
+  },
+  "show_notification": true
+}

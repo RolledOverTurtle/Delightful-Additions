@@ -1,0 +1,9 @@
+{
+  "parent": "farmersdelight:block/pie",
+  "textures": {
+    "particle": "delightfuladditions:block/cheese_pizza_top",
+    "bottom": "delightfuladditions:block/pizza_bottom",
+    "side": "delightfuladditions:block/pizza_side",
+    "top": "delightfuladditions:block/cheese_pizza_top"
+  }
+}

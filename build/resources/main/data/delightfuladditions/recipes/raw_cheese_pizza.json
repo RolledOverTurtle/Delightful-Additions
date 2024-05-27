@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "delightfuladditions:cheese"
+    },
+    "D": {
+      "item": "farmersdelight:wheat_dough"
+    },
+    "T": {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  },
+  "pattern": [
+    " T ",
+    "CDC"
+  ],
+  "result": {
+    "item": "delightfuladditions:raw_cheese_pizza"
+  },
+  "show_notification": true
+}

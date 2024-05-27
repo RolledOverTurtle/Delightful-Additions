@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "delightfuladditions:meat_lover_pizza"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "delightfuladditions:meat_lover_pizza_slice"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

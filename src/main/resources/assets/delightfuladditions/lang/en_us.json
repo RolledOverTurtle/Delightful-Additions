@@ -1,0 +1,21 @@
+{
+  "item.delightfuladditions.cheese": "Cheese",
+  "item.delightfuladditions.cheese_wheel": "Cheese Wheel",
+  "item.delightfuladditions.cheese_sandwich": "Cheese Sandwich",
+
+  "item.delightfuladditions.raw_cheese_pizza": "Raw Cheese Pizza",
+  "item.delightfuladditions.cheese_pizza": "Cheese Pizza",
+  "item.delightfuladditions.raw_pepperoni_pizza": "Raw Pepperoni Pizza",
+  "item.delightfuladditions.pepperoni_pizza": "Pepperoni Pizza",
+  "item.delightfuladditions.raw_veggie_pizza": "Raw Veggie Pizza",
+  "item.delightfuladditions.veggie_pizza": "Veggie Pizza",
+  "item.delightfuladditions.raw_meat_lover_pizza": "Raw Meat Lover's Pizza",
+  "item.delightfuladditions.meat_lover_pizza": "Meat Lover's Pizza",
+
+  "item.delightfuladditions.cheese_pizza_slice": "Cheese Pizza Slice",
+  "item.delightfuladditions.pepperoni_pizza_slice": "Pepperoni Pizza Slice",
+  "item.delightfuladditions.veggie_pizza_slice": "Veggie Pizza Slice",
+  "item.delightfuladditions.meat_lover_pizza_slice": "Meat Lover's Pizza Slice",
+
+  "creativetab.delightful_additions_tab": "Delightful Additions"
+}

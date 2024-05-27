@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "delightfuladditions:item/raw_pepperoni_pizza"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "delightfuladditions:cheese"
+    },
+    {
+      "item": "delightfuladditions:cheese"
+    }
+  ],
+  "result": {
+    "item": "delightfuladditions:cheese_sandwich"
+  }
+}

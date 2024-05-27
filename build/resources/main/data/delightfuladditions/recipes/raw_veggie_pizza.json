@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "delightfuladditions:cheese"
+    },
+    "D": {
+      "item": "farmersdelight:wheat_dough"
+    },
+    "M": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "O": {
+      "item": "farmersdelight:onion"
+    },
+    "T": {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  },
+  "pattern": [
+    " O ",
+    "MTM",
+    "CDC"
+  ],
+  "result": {
+    "item": "delightfuladditions:raw_veggie_pizza"
+  },
+  "show_notification": true
+}
