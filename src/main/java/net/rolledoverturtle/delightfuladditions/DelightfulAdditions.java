@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rolledoverturtle.delightfuladditions.block.ModBlockEntityTypes;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 import net.rolledoverturtle.delightfuladditions.item.ModCreativeModeTabs;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
@@ -35,6 +36,8 @@ public class DelightfulAdditions
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntityTypes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
