@@ -17,6 +17,9 @@ public class ModBlockEntityTypes {
         return BlockEntityType.Builder.of(StoveBlockEntity::new, new Block[]{(Block) ModBlocks.MUD_BRICK_STOVE.get()}).build((Type)null);
     });
 
-    public static void register(IEventBus bus)  { TILES.register(bus); }
+    public static void register(IEventBus bus)  {
+        vectorwing.farmersdelight.common.registry.ModBlockEntityTypes.STOVE.get()
+        TILES.register(bus);
+    }
 }
 
