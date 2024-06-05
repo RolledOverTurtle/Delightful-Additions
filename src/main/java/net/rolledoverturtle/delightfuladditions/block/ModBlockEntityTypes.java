@@ -13,12 +13,11 @@ import vectorwing.farmersdelight.common.block.entity.*;
 public class ModBlockEntityTypes {
     public static final DeferredRegister<BlockEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, DelightfulAdditions.MOD_ID);
 
-    public static final RegistryObject<BlockEntityType<StoveBlockEntity>> MUD_BRICK_STOVE = TILES.register("mud_brick_stove", () -> {
+    /* public static final RegistryObject<BlockEntityType<StoveBlockEntity>> MUD_BRICK_STOVE = TILES.register("mud_brick_stove", () -> {
         return BlockEntityType.Builder.of(StoveBlockEntity::new, new Block[]{(Block) ModBlocks.MUD_BRICK_STOVE.get()}).build((Type)null);
-    });
+    }); */
 
     public static void register(IEventBus bus)  {
-        vectorwing.farmersdelight.common.registry.ModBlockEntityTypes.STOVE.get()
         TILES.register(bus);
     }
 }

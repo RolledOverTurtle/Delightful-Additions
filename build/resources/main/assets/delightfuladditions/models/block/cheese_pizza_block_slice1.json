@@ -1,0 +1,10 @@
+{
+  "parent": "delightfuladditions:block/cheese_pizza_block_slice1",
+  "textures": {
+    "particle": "delightfuladditions:block/cheese_pizza_top",
+    "bottom": "delightfuladditions:block/pizza_bottom",
+    "inner": "delightfuladditions:block/cheese_pizza_inner",
+    "side": "delightfuladditions:block/pizza_side",
+    "top": "delightfuladditions:block/cheese_pizza_top"
+  }
+}

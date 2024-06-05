@@ -1,4 +1,4 @@
-package net.rolledoverturtle.delightfuladditions.block.custom;
+/* package net.rolledoverturtle.delightfuladditions.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
@@ -35,4 +35,4 @@ public class MudBrickStoveBlock extends StoveBlock {
         return null;
     }
 
-}
+} */
