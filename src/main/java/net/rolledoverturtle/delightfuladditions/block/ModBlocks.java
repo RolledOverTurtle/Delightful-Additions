@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 // import net.rolledoverturtle.delightfuladditions.block.custom.MudBrickStoveBlock;
+import net.rolledoverturtle.delightfuladditions.block.custom.PineappleCropBlock;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
 import vectorwing.farmersdelight.common.block.PieBlock;
 import vectorwing.farmersdelight.common.block.StoveBlock;
@@ -30,9 +31,14 @@ public class ModBlocks {
         };
     }
 
-    public static final RegistryObject<Block> CHEESE_PIZZA_BLOCK = registerBlock("cheese_pizza_block", () -> new PieBlock(BlockBehaviour.Properties.copy(vectorwing.farmersdelight.common.registry.ModBlocks.APPLE_PIE.get()), ModItems.CHEESE_PIZZA_SLICE));
+    public static final RegistryObject<Block> CHEESE_PIZZA_BLOCK = registerBlock("cheese_pizza_block",
+            () -> new PieBlock(BlockBehaviour.Properties.copy(vectorwing.farmersdelight.common.registry.ModBlocks.APPLE_PIE.get()), ModItems.CHEESE_PIZZA_SLICE));
 
-    // public static final RegistryObject<Block> MUD_BRICK_STOVE = registerBlock("mud_brick_stove", () -> new MudBrickStoveBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).lightLevel(litBlockEmission(13))));
+    public static final RegistryObject<Block> PINEAPPLE_CROP = BLOCKS.register("pineapple_crop",
+            () -> new PineappleCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    // public static final RegistryObject<Block> MUD_BRICK_STOVE = registerBlock("mud_brick_stove",
+    // () -> new MudBrickStoveBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).lightLevel(litBlockEmission(13))));
     // Properties.copy(Blocks.BRICKS).lightLevel(litBlockEmission(13))
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

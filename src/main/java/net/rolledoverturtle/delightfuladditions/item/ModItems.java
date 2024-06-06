@@ -1,11 +1,13 @@
 package net.rolledoverturtle.delightfuladditions.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
+import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -43,6 +45,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.VEGGIE_PIZZA_SLICE)));
     public static final RegistryObject<Item> MEAT_LOVER_PIZZA_SLICE =  ITEMS.register("meat_lover_pizza_slice",
             () -> new Item(new Item.Properties().food(ModFoods.MEAT_LOVER_PIZZA_SLICE)));
+
+    public static final RegistryObject<Item> PINEAPPLE =  ITEMS.register("pineapple",
+            () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
       ITEMS.register(eventBus);

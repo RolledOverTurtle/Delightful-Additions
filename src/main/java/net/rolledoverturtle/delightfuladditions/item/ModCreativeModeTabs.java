@@ -36,6 +36,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHEESE_WHEEL.get());
                         output.accept(ModItems.CHEESE_SANDWICH.get());
 
+                        output.accept(ModItems.PINEAPPLE.get());
+
 
                     })
                     .build());
