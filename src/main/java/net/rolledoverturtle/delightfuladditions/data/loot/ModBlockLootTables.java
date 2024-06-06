@@ -31,7 +31,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PineappleCropBlock.AGE, 5));
 
         this.add(ModBlocks.PINEAPPLE_CROP.get(), createCropDrops(ModBlocks.PINEAPPLE_CROP.get(),
-                ModItems.PINEAPPLE.get(), lootitemcondition$builder));
+                ModItems.PINEAPPLE.get(), ModItems.PINEAPPLE.get(), lootitemcondition$builder));
     }
 
 

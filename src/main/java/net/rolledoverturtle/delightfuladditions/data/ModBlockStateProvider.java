@@ -42,7 +42,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return models;
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get());
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
     public ModelFile cubeAll(Block block) {
         return null;
