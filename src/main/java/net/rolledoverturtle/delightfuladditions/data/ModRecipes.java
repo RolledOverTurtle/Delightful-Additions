@@ -81,6 +81,7 @@ public class ModRecipes extends RecipeProvider {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.PEPPERONI_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), (ItemLike) ModItems.PEPPERONI_PIZZA_SLICE.get(), 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.VEGGIE_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), (ItemLike) ModItems.VEGGIE_PIZZA_SLICE.get(), 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.MEAT_LOVER_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), (ItemLike) ModItems.MEAT_LOVER_PIZZA_SLICE.get(), 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.PINEAPPLE.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), (ItemLike) ModItems.PINEAPPLE_SLICES.get(), 4).build(consumer);
 
 
         //(ItemLike) vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get(), 2).build(consumer);

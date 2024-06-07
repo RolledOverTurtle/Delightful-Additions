@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-22T23:08:17.7495627	Recipes
+// 1.20.1	2024-06-07T01:25:10.366418	Recipes
 aafa9d4de79696a38a97ff7f49cce536f1ed50a8 data/delightfuladditions/advancements/recipes/food/cheese_sandwich.json
 3eb82c4f561304e42f870174734a0b46f7d34308 data/delightfuladditions/advancements/recipes/food/raw_cheese_pizza.json
 05aa30a4f08a5ea1f9425ebc16866272158808c9 data/delightfuladditions/advancements/recipes/food/raw_meat_lover_pizza.json
@@ -13,4 +13,5 @@ c386c87afcb29b7cd5688f31f9bebac8fb1cb04e data/farmersdelight/recipes/cutting/che
 6e49f6564a07eb1dbfbef454fac6a86762b752a2 data/farmersdelight/recipes/cutting/cheese_wheel.json
 0c353538baee2002aacac5fbc535e7a586b93832 data/farmersdelight/recipes/cutting/meat_lover_pizza.json
 023c6ca664bed10c318edc2b747166f81def8e54 data/farmersdelight/recipes/cutting/pepperoni_pizza.json
+1a072113c7aae395b22037984956e3f20eb452f1 data/farmersdelight/recipes/cutting/pineapple.json
 1ed41956c0a76c78cd6d3dc01c1c24035697b376 data/farmersdelight/recipes/cutting/veggie_pizza.json

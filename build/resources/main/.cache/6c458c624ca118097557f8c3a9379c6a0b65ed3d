@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-22T02:35:07.7449173	Item Models: delightfuladditions
+// 1.20.1	2024-06-07T01:25:10.3654215	Item Models: delightfuladditions
 a03c129f3cc07cdc98cba1d44e6774372df3bb6e assets/delightfuladditions/models/item/cheese.json
 3d43e69308adb14bb4f68444ddd75169527067d7 assets/delightfuladditions/models/item/cheese_pizza.json
 3ce6a4664b8f04d4c3c732bd7edd7563a720ece9 assets/delightfuladditions/models/item/cheese_pizza_slice.json
@@ -8,6 +8,8 @@ da1de0c319f4d011161660c4017214ed8efab33c assets/delightfuladditions/models/item/
 5a1d0c0a68a9c60b706cf3b3e6bbcb459bd9b9fc assets/delightfuladditions/models/item/meat_lover_pizza_slice.json
 aa4c8e319c7c011b5abb19a36f118cdfbe69c982 assets/delightfuladditions/models/item/pepperoni_pizza.json
 1e3b1e9271ef55ed514b62ff2b5275dd90c1fa33 assets/delightfuladditions/models/item/pepperoni_pizza_slice.json
+02ec9a37cab61a445c2f0f420a7ffae2e719ddf9 assets/delightfuladditions/models/item/pineapple.json
+340ac69b3a998bb401c7ac4b746714052978e849 assets/delightfuladditions/models/item/pineapple_slices.json
 b2a7dea59df0e0f9c7355e4a9f6408c5cb058236 assets/delightfuladditions/models/item/raw_cheese_pizza.json
 6d4a3553be6422fd7e775644c429699d472ff2b3 assets/delightfuladditions/models/item/raw_meat_lover_pizza.json
 d686842817eefd3f49c1c13a669a9e146b4b6263 assets/delightfuladditions/models/item/raw_pepperoni_pizza.json

@@ -25,7 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.PINEAPPLE_CROP);
 
-        makePineappleCrop((CropBlock) ModBlocks.PINEAPPLE_CROP.get(), "pineapple_stage", "pineapple_stage");
+        makePineappleCrop((CropBlock) ModBlocks.PINEAPPLE_CROP.get(), "pineapple_stage_", "pineapple_stage_");
     }
 
     public void makePineappleCrop(CropBlock block, String modelName, String textureName) {

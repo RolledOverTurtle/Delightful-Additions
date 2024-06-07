@@ -47,6 +47,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.MEAT_LOVER_PIZZA_SLICE)));
 
     public static final RegistryObject<Item> PINEAPPLE =  ITEMS.register("pineapple",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PINEAPPLE_SLICES =  ITEMS.register("pineapple_slices",
             () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
 
 
