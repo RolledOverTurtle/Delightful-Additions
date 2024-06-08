@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "delightfuladditions:cooked_prawn"
+    },
+    {
+      "item": "delightfuladditions:cooked_prawn"
+    },
+    {
+      "item": "farmersdelight:cooked_rice"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "delightfuladditions:prawn_nigiri"
+  }
+}

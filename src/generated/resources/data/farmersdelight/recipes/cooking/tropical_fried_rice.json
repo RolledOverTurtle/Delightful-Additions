@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "delightfuladditions:pineapple_slices"
+    },
+    {
+      "item": "delightfuladditions:prawn"
+    },
+    {
+      "item": "farmersdelight:cooked_rice"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "delightfuladditions:tropical_fried_rice"
+  }
+}

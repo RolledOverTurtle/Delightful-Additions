@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "delightfuladditions:coconut"
+    },
+    {
+      "item": "delightfuladditions:pineapple_slices"
+    },
+    {
+      "item": "delightfuladditions:pineapple_slices"
+    },
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "result": {
+    "item": "delightfuladditions:pina_colada"
+  }
+}

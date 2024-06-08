@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "delightfuladditions:coconut"
+    },
+    {
+      "item": "delightfuladditions:prawn"
+    },
+    {
+      "item": "delightfuladditions:prawn"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "tag": "forge:eggs"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 2,
+    "item": "delightfuladditions:coconut_prawn"
+  }
+}

@@ -41,8 +41,23 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.PINEAPPLE.get());
                         output.accept(ModItems.PINEAPPLE_SLICES.get());
-                        output.accept(ModItems.VINEGAR.get());
+                        output.accept(ModItems.COCONUT.get());
+                        output.accept(ModItems.COCONUT_HUSK.get());
+                        output.accept(ModItems.PINA_COLADA.get());
+                        output.accept(ModItems.PRAWN.get());
+                        output.accept(ModItems.COOKED_PRAWN.get());
+                        output.accept(ModItems.COCONUT_PRAWN.get());
+                        output.accept(ModItems.PRAWN_COCKTAIL.get());
+                        output.accept(ModItems.PRAWN_NIGIRI.get());
+                        output.accept(ModItems.MOQUECA.get());
+                        output.accept(ModItems.TROPICAL_FRIED_RICE.get());
+                        output.accept(ModItems.SWEET_SOUR_CHICKEN_WITH_RICE.get());
+                        output.accept(ModItems.SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE.get());
                         output.accept(ModItems.SWEET_SOUR_SAUCE.get());
+                        output.accept(ModItems.VINEGAR.get());
+
+
+
 
 
 

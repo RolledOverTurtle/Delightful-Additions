@@ -18,6 +18,7 @@ import vectorwing.farmersdelight.data.recipe.CuttingRecipes;
 
 import java.util.function.Consumer;
 
+import static net.rolledoverturtle.delightfuladditions.item.ModItems.PRAWN_COCKTAIL;
 import static net.rolledoverturtle.delightfuladditions.item.ModItems.RAW_CHEESE_PIZZA;
 
 public class ModRecipes extends RecipeProvider {
@@ -34,6 +35,39 @@ public class ModRecipes extends RecipeProvider {
                 .requires(ModItems.CHEESE.get())
                 .unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()))
                 .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SWEET_SOUR_CHICKEN_WITH_RICE.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.COOKED_CHICKEN_CUTS.get())
+                .requires(ModItems.SWEET_SOUR_SAUCE.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get())
+                .requires(Items.BOWL)
+                .unlockedBy("has_sweet_sour_sauce", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.SWEET_SOUR_SAUCE.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE.get())
+                .requires(ModItems.COCONUT_PRAWN.get())
+                .requires(ModItems.COCONUT_PRAWN.get())
+                .requires(ModItems.SWEET_SOUR_SAUCE.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get())
+                .requires(Items.BOWL)
+                .unlockedBy("has_sweet_sour_sauce", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.SWEET_SOUR_SAUCE.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PINA_COLADA.get())
+                .requires(ModItems.COCONUT.get())
+                .requires(ModItems.PINEAPPLE_SLICES.get())
+                .requires(ModItems.PINEAPPLE_SLICES.get())
+                .requires(Items.ICE)
+                .unlockedBy("has_coconut", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COCONUT.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PRAWN_NIGIRI.get(), 2)
+                .requires(ModItems.COOKED_PRAWN.get())
+                .requires(ModItems.COOKED_PRAWN.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get())
+                .unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()))
+                .save(consumer);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, RAW_CHEESE_PIZZA.get())
                 .pattern(" T ")
@@ -91,6 +125,17 @@ public class ModRecipes extends RecipeProvider {
                 .unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.PRAWN_COCKTAIL.get())
+                .pattern("ETC")
+                .pattern("PBP")
+                .define('E', Items.EGG)
+                .define('T', vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get())
+                .define('C', vectorwing.farmersdelight.common.registry.ModItems.CABBAGE.get())
+                .define('P', ModItems.COOKED_PRAWN.get())
+                .define('B', Items.GLASS_BOTTLE)
+                .unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()))
+                .save(consumer);
+
         SimpleCookingRecipeBuilder smelting_cheese_pizza = SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_CHEESE_PIZZA.get()), RecipeCategory.FOOD, ModItems.CHEESE_PIZZA.get(), 0.35F, 200);
         smelting_cheese_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
         smelting_cheese_pizza.save(consumer);
@@ -129,6 +174,9 @@ public class ModRecipes extends RecipeProvider {
 
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.VINEGAR.get(), 1, 100, 0.35F, Items.GLASS_BOTTLE).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(Items.SUGAR).unlockedByItems("has_pineapple", ModItems.PINEAPPLE.get()).setRecipeBookTab(CookingPotRecipeBookTab.MISC).build(consumer);
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SWEET_SOUR_SAUCE.get(), 1, 100, 0.35F, Items.BOWL).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(ModItems.VINEGAR.get()).addIngredient(Items.HONEY_BOTTLE).unlockedByItems("has_pineapple", ModItems.PINEAPPLE.get()).setRecipeBookTab(CookingPotRecipeBookTab.MISC).build(consumer);
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MOQUECA.get(), 1, 200, 0.35F, Items.BOWL).addIngredient(ModItems.COCONUT.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.ONION.get()).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.COCONUT_PRAWN.get(), 2, 200, 0.35F).addIngredient(ModItems.COCONUT.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(Items.BREAD).addIngredient(ForgeTags.EGGS).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.TROPICAL_FRIED_RICE.get(), 1, 200, 0.35F, Items.BOWL).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get()).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
 
     }
 

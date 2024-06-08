@@ -11,8 +11,8 @@
   "item.delightfuladditions.veggie_pizza": "Veggie Pizza",
   "item.delightfuladditions.raw_meat_lover_pizza": "Raw Meat Lover's Pizza",
   "item.delightfuladditions.meat_lover_pizza": "Meat Lover's Pizza",
-  "item.delightfuladditions.raw_hawaiian_pizza_": "Raw Hawaiian Pizza",
-  "item.delightfuladditions.hawaiian_pizza_": "Hawaiian Pizza",
+  "item.delightfuladditions.raw_hawaiian_pizza": "Raw Hawaiian Pizza",
+  "item.delightfuladditions.hawaiian_pizza": "Hawaiian Pizza",
 
   "item.delightfuladditions.cheese_pizza_slice": "Cheese Pizza Slice",
   "item.delightfuladditions.pepperoni_pizza_slice": "Pepperoni Pizza Slice",
@@ -24,6 +24,20 @@
   "item.delightfuladditions.pineapple_slices": "Pineapple Slice",
   "item.delightfuladditions.vinegar": "Vinegar",
   "item.delightfuladditions.sweet_sour_sauce": "Sweet Sour Sauce",
+  "item.delightfuladditions.coconut": "Coconut",
+  "item.delightfuladditions.coconut_husk": "Coconut Husk",
+  "item.delightfuladditions.pina_colada": "Pina Colada",
+  "item.delightfuladditions.prawn": "Prawn",
+  "item.delightfuladditions.cooked_prawn": "Cooked Prawn",
+  "item.delightfuladditions.coconut_prawn": "Coconut Prawn",
+  "item.delightfuladditions.prawn_cocktail": "Prawn Cocktail",
+  "item.delightfuladditions.prawn_nigiri": "Prawn Nigiri",
+  "item.delightfuladditions.tropical_fried_rice": "Tropical Fried Rice",
+  "item.delightfuladditions.moqueca": "Moqueca",
+  "item.delightfuladditions.sweet_sour_chicken_with_rice": "Sweet Sour Chicken With Rice",
+  "item.delightfuladditions.sweet_sour_coconut_prawns_with_rice": "Sweet Sour Coconut Prawn With Rice",
+
+
 
   "creativetab.delightful_additions_tab": "Delightful Additions"
 }

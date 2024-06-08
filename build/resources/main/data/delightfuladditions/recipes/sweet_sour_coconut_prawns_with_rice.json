@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "delightfuladditions:coconut_prawn"
+    },
+    {
+      "item": "delightfuladditions:coconut_prawn"
+    },
+    {
+      "item": "delightfuladditions:sweet_sour_sauce"
+    },
+    {
+      "item": "farmersdelight:cooked_rice"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "delightfuladditions:sweet_sour_coconut_prawns_with_rice"
+  }
+}

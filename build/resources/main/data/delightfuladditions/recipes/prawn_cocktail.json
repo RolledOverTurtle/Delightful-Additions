@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "C": {
+      "item": "farmersdelight:cabbage"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "P": {
+      "item": "delightfuladditions:cooked_prawn"
+    },
+    "T": {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  },
+  "pattern": [
+    "ETC",
+    "PBP"
+  ],
+  "result": {
+    "item": "delightfuladditions:prawn_cocktail"
+  },
+  "show_notification": true
+}

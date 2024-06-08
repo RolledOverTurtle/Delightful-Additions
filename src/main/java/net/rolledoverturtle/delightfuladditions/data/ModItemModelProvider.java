@@ -42,8 +42,20 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.PINEAPPLE);
         simpleItem(ModItems.PINEAPPLE_SLICES);
-        simpleItem(ModItems.VINEGAR);
+        simpleItem(ModItems.COCONUT);
+        simpleItem(ModItems.COCONUT_HUSK);
+        simpleItem(ModItems.PINA_COLADA);
+        simpleItem(ModItems.PRAWN);
+        simpleItem(ModItems.COOKED_PRAWN);
+        simpleItem(ModItems.COCONUT_PRAWN);
+        simpleItem(ModItems.PRAWN_COCKTAIL);
+        simpleItem(ModItems.PRAWN_NIGIRI);
+        simpleItem(ModItems.TROPICAL_FRIED_RICE);
+        simpleItem(ModItems.MOQUECA);
+        simpleItem(ModItems.SWEET_SOUR_CHICKEN_WITH_RICE);
+        simpleItem(ModItems.SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE);
         simpleItem(ModItems.SWEET_SOUR_SAUCE);
+        simpleItem(ModItems.VINEGAR);
 
     }
 

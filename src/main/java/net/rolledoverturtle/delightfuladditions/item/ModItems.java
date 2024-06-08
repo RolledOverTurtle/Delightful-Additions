@@ -56,12 +56,38 @@ public class ModItems {
     public static final RegistryObject<Item> PINEAPPLE =  ITEMS.register("pineapple",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PINEAPPLE_SLICES =  ITEMS.register("pineapple_slices",
-            () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties().food(ModFoods.PINEAPPLE_SLICE)));
+
+    public static final RegistryObject<Item> PRAWN =  ITEMS.register("prawn",
+            () -> new Item(new Item.Properties().food(ModFoods.PRAWN)));
+    public static final RegistryObject<Item> COOKED_PRAWN =  ITEMS.register("cooked_prawn",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_PRAWN)));
+    public static final RegistryObject<Item> COCONUT =  ITEMS.register("coconut",
+            () -> new Item(new Item.Properties().food(ModFoods.COCONUT)));
+    public static final RegistryObject<Item> COCONUT_HUSK =  ITEMS.register("coconut_husk",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PINA_COLADA =  ITEMS.register("pina_colada",
+            () -> new Item(new Item.Properties().food(ModFoods.PINA_COLADA)));
+    public static final RegistryObject<Item> COCONUT_PRAWN =  ITEMS.register("coconut_prawn",
+            () -> new Item(new Item.Properties().food(ModFoods.COCONUT_PRAWN)));
+    public static final RegistryObject<Item> PRAWN_NIGIRI =  ITEMS.register("prawn_nigiri",
+            () -> new Item(new Item.Properties().food(ModFoods.PRAWN_NIGIRI)));
+    public static final RegistryObject<Item> PRAWN_COCKTAIL =  ITEMS.register("prawn_cocktail",
+            () -> new Item(new Item.Properties().food(ModFoods.PRAWN_COCKTAIL)));
+    public static final RegistryObject<Item> SWEET_SOUR_CHICKEN_WITH_RICE=  ITEMS.register("sweet_sour_chicken_with_rice",
+            () -> new Item(new Item.Properties().food(ModFoods.SWEET_SOUR_CHICKEN_WITH_RICE)));
+    public static final RegistryObject<Item> SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE =  ITEMS.register("sweet_sour_coconut_prawns_with_rice",
+            () -> new Item(new Item.Properties().food(ModFoods.SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE)));
+    public static final RegistryObject<Item> TROPICAL_FRIED_RICE =  ITEMS.register("tropical_fried_rice",
+            () -> new Item(new Item.Properties().food(ModFoods.TROPICAL_FRIED_RICE)));
+    public static final RegistryObject<Item> MOQUECA =  ITEMS.register("moqueca",
+            () -> new Item(new Item.Properties().food(ModFoods.MOQUECA)));
 
     public static final RegistryObject<Item> VINEGAR =  ITEMS.register("vinegar",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SWEET_SOUR_SAUCE =  ITEMS.register("sweet_sour_sauce",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SWEET_SOUR_SAUCE)));
 
 
 

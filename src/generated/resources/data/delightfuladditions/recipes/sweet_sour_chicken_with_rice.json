@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farmersdelight:cooked_chicken_cuts"
+    },
+    {
+      "item": "delightfuladditions:sweet_sour_sauce"
+    },
+    {
+      "item": "farmersdelight:cooked_rice"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "delightfuladditions:sweet_sour_chicken_with_rice"
+  }
+}
