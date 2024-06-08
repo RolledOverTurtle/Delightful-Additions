@@ -22,15 +22,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PEPPERONI_PIZZA_SLICE.get());
                         output.accept(ModItems.VEGGIE_PIZZA_SLICE.get());
                         output.accept(ModItems.MEAT_LOVER_PIZZA_SLICE.get());
+                        output.accept(ModItems.HAWAIIAN_PIZZA_SLICE.get());
 
                         output.accept(ModItems.CHEESE_PIZZA.get());
                         output.accept(ModItems.PEPPERONI_PIZZA.get());
                         output.accept(ModItems.VEGGIE_PIZZA.get());
                         output.accept(ModItems.MEAT_LOVER_PIZZA.get());
+                        output.accept(ModItems.HAWAIIAN_PIZZA.get());
                         output.accept(ModItems.RAW_CHEESE_PIZZA.get());
                         output.accept(ModItems.RAW_PEPPERONI_PIZZA.get());
                         output.accept(ModItems.RAW_VEGGIE_PIZZA.get());
                         output.accept(ModItems.RAW_MEAT_LOVER_PIZZA.get());
+                        output.accept(ModItems.RAW_HAWAIIAN_PIZZA.get());
 
                         output.accept(ModItems.CHEESE.get());
                         output.accept(ModItems.CHEESE_WHEEL.get());
@@ -38,6 +41,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.PINEAPPLE.get());
                         output.accept(ModItems.PINEAPPLE_SLICES.get());
+                        output.accept(ModItems.VINEGAR.get());
+                        output.accept(ModItems.SWEET_SOUR_SAUCE.get());
+
 
 
 

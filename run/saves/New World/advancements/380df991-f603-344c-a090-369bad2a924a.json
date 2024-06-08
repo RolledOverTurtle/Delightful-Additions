@@ -524,5 +524,77 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2024-06-08 00:30:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-06-08 00:30:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2024-06-08 00:30:41 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/cheese_pizza": {
+    "criteria": {
+      "has_the_recipe": "2024-06-08 00:30:57 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/veggie_pizza": {
+    "criteria": {
+      "has_the_recipe": "2024-06-08 01:14:07 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/honey_cookie": {
+    "criteria": {
+      "has_honey_bottle": "2024-06-08 02:37:58 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_honey_bottle": {
+    "criteria": {
+      "has_honey_bottle": "2024-06-08 02:37:58 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/honey_block": {
+    "criteria": {
+      "has_honey_bottle": "2024-06-08 02:37:58 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/vinegar": {
+    "criteria": {
+      "has_the_recipe": "2024-06-08 02:38:26 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/sweet_sour_sauce": {
+    "criteria": {
+      "has_the_recipe": "2024-06-08 02:44:17 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2024-06-08 02:51:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2024-06-08 02:51:00 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

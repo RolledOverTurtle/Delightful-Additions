@@ -17,6 +17,8 @@ public class ModFoods {
             .saturationMod(0.4f).build();
     public static final FoodProperties MEAT_LOVER_PIZZA_SLICE = new FoodProperties.Builder().nutrition(6)
             .saturationMod(0.4f).build();
+    public static final FoodProperties HAWAIIAN_PIZZA_SLICE = new FoodProperties.Builder().nutrition(6)
+            .saturationMod(0.4f).build();
 
 
 

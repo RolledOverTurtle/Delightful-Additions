@@ -11,14 +11,19 @@
   "item.delightfuladditions.veggie_pizza": "Veggie Pizza",
   "item.delightfuladditions.raw_meat_lover_pizza": "Raw Meat Lover's Pizza",
   "item.delightfuladditions.meat_lover_pizza": "Meat Lover's Pizza",
+  "item.delightfuladditions.raw_hawaiian_pizza_": "Raw Hawaiian Pizza",
+  "item.delightfuladditions.hawaiian_pizza_": "Hawaiian Pizza",
 
   "item.delightfuladditions.cheese_pizza_slice": "Cheese Pizza Slice",
   "item.delightfuladditions.pepperoni_pizza_slice": "Pepperoni Pizza Slice",
   "item.delightfuladditions.veggie_pizza_slice": "Veggie Pizza Slice",
   "item.delightfuladditions.meat_lover_pizza_slice": "Meat Lover's Pizza Slice",
+  "item.delightfuladditions.hawaiian_pizza_slice": "Hawaiian Pizza Slice",
 
   "item.delightfuladditions.pineapple": "Pineapple",
   "item.delightfuladditions.pineapple_slices": "Pineapple Slice",
+  "item.delightfuladditions.vinegar": "Vinegar",
+  "item.delightfuladditions.sweet_sour_sauce": "Sweet Sour Sauce",
 
   "creativetab.delightful_additions_tab": "Delightful Additions"
 }

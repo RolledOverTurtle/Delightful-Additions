@@ -2,6 +2,7 @@ package net.rolledoverturtle.delightfuladditions.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -36,6 +37,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MEAT_LOVER_PIZZA =  ITEMS.register("meat_lover_pizza",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_HAWAIIAN_PIZZA =  ITEMS.register("raw_hawaiian_pizza",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HAWAIIAN_PIZZA =  ITEMS.register("hawaiian_pizza",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CHEESE_PIZZA_SLICE =  ITEMS.register("cheese_pizza_slice",
             () -> new Item(new Item.Properties().food(ModFoods.CHEESE_PIZZA_SLICE)));
@@ -45,14 +50,24 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.VEGGIE_PIZZA_SLICE)));
     public static final RegistryObject<Item> MEAT_LOVER_PIZZA_SLICE =  ITEMS.register("meat_lover_pizza_slice",
             () -> new Item(new Item.Properties().food(ModFoods.MEAT_LOVER_PIZZA_SLICE)));
+    public static final RegistryObject<Item> HAWAIIAN_PIZZA_SLICE =  ITEMS.register("hawaiian_pizza_slice",
+            () -> new Item(new Item.Properties().food(ModFoods.HAWAIIAN_PIZZA_SLICE)));
 
     public static final RegistryObject<Item> PINEAPPLE =  ITEMS.register("pineapple",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PINEAPPLE_SLICES =  ITEMS.register("pineapple_slices",
             () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> VINEGAR =  ITEMS.register("vinegar",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SWEET_SOUR_SAUCE =  ITEMS.register("sweet_sour_sauce",
+            () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
       ITEMS.register(eventBus);
     }
+
+
 }

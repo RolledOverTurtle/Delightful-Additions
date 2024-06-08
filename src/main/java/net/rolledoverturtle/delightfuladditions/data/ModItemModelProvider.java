@@ -26,19 +26,24 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEPPERONI_PIZZA);
         simpleItem(ModItems.VEGGIE_PIZZA);
         simpleItem(ModItems.MEAT_LOVER_PIZZA);
+        simpleItem(ModItems.HAWAIIAN_PIZZA);
 
         simpleItem(ModItems.RAW_CHEESE_PIZZA);
         simpleItem(ModItems.RAW_PEPPERONI_PIZZA);
         simpleItem(ModItems.RAW_VEGGIE_PIZZA);
         simpleItem(ModItems.RAW_MEAT_LOVER_PIZZA);
+        simpleItem(ModItems.RAW_HAWAIIAN_PIZZA);
 
         simpleItem(ModItems.CHEESE_PIZZA_SLICE);
         simpleItem(ModItems.PEPPERONI_PIZZA_SLICE);
         simpleItem(ModItems.VEGGIE_PIZZA_SLICE);
         simpleItem(ModItems.MEAT_LOVER_PIZZA_SLICE);
+        simpleItem(ModItems.HAWAIIAN_PIZZA_SLICE);
 
         simpleItem(ModItems.PINEAPPLE);
         simpleItem(ModItems.PINEAPPLE_SLICES);
+        simpleItem(ModItems.VINEGAR);
+        simpleItem(ModItems.SWEET_SOUR_SAUCE);
 
     }
 
