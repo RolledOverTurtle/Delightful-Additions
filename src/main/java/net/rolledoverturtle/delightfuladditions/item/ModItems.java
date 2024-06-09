@@ -2,7 +2,6 @@ package net.rolledoverturtle.delightfuladditions.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -81,8 +80,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE)));
     public static final RegistryObject<Item> TROPICAL_FRIED_RICE =  ITEMS.register("tropical_fried_rice",
             () -> new Item(new Item.Properties().food(ModFoods.TROPICAL_FRIED_RICE)));
-    public static final RegistryObject<Item> MOQUECA =  ITEMS.register("moqueca",
-            () -> new Item(new Item.Properties().food(ModFoods.MOQUECA)));
+    public static final RegistryObject<Item> MOQUECA_STEW =  ITEMS.register("moqueca",
+            () -> new Item(new Item.Properties().food(ModFoods.MOQUECA_STEW)));
 
     public static final RegistryObject<Item> VINEGAR =  ITEMS.register("vinegar",
             () -> new Item(new Item.Properties()));

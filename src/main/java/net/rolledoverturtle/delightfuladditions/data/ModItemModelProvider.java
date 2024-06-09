@@ -51,7 +51,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PRAWN_COCKTAIL);
         simpleItem(ModItems.PRAWN_NIGIRI);
         simpleItem(ModItems.TROPICAL_FRIED_RICE);
-        simpleItem(ModItems.MOQUECA);
+        simpleItem(ModItems.MOQUECA_STEW);
         simpleItem(ModItems.SWEET_SOUR_CHICKEN_WITH_RICE);
         simpleItem(ModItems.SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE);
         simpleItem(ModItems.SWEET_SOUR_SAUCE);

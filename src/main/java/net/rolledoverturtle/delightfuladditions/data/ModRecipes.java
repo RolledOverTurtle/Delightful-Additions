@@ -1,24 +1,18 @@
 package net.rolledoverturtle.delightfuladditions.data;
 
-import net.minecraft.advancements.CriterionTriggerInstance;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
-import vectorwing.farmersdelight.data.recipe.CuttingRecipes;
 
 import java.util.function.Consumer;
 
-import static net.rolledoverturtle.delightfuladditions.item.ModItems.PRAWN_COCKTAIL;
 import static net.rolledoverturtle.delightfuladditions.item.ModItems.RAW_CHEESE_PIZZA;
 
 public class ModRecipes extends RecipeProvider {
@@ -174,7 +168,7 @@ public class ModRecipes extends RecipeProvider {
 
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.VINEGAR.get(), 1, 100, 0.35F, Items.GLASS_BOTTLE).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(Items.SUGAR).unlockedByItems("has_pineapple", ModItems.PINEAPPLE.get()).setRecipeBookTab(CookingPotRecipeBookTab.MISC).build(consumer);
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SWEET_SOUR_SAUCE.get(), 1, 100, 0.35F, Items.BOWL).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(ModItems.VINEGAR.get()).addIngredient(Items.HONEY_BOTTLE).unlockedByItems("has_pineapple", ModItems.PINEAPPLE.get()).setRecipeBookTab(CookingPotRecipeBookTab.MISC).build(consumer);
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MOQUECA.get(), 1, 200, 0.35F, Items.BOWL).addIngredient(ModItems.COCONUT.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.ONION.get()).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MOQUECA_STEW.get(), 1, 200, 0.35F, Items.BOWL).addIngredient(ModItems.COCONUT.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.ONION.get()).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.COCONUT_PRAWN.get(), 2, 200, 0.35F).addIngredient(ModItems.COCONUT.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(Items.BREAD).addIngredient(ForgeTags.EGGS).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.TROPICAL_FRIED_RICE.get(), 1, 200, 0.35F, Items.BOWL).addIngredient(ModItems.PINEAPPLE_SLICES.get()).addIngredient(ModItems.PRAWN.get()).addIngredient(vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get()).unlockedByItems("has_prawn", ModItems.PRAWN.get()).setRecipeBookTab(CookingPotRecipeBookTab.MEALS).build(consumer);
 
