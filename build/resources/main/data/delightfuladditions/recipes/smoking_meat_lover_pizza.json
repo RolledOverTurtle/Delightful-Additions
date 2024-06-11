@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "delightfuladditions:raw_meat_lover_pizza"
+  },
+  "result": "delightfuladditions:meat_lover_pizza"
+}

@@ -2,12 +2,16 @@ package net.rolledoverturtle.delightfuladditions.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
+import net.rolledoverturtle.delightfuladditions.item.custom.PinaColadaItem;
+import vectorwing.farmersdelight.common.FoodValues;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -66,8 +70,10 @@ public class ModItems {
     public static final RegistryObject<Item> COCONUT_HUSK =  ITEMS.register("coconut_husk",
             () -> new Item(new Item.Properties()));
 
+    // .craftRemainder(ModItems.COCONUT_HUSK.get())  For giving back the item in recipes!
+
     public static final RegistryObject<Item> PINA_COLADA =  ITEMS.register("pina_colada",
-            () -> new Item(new Item.Properties().food(ModFoods.PINA_COLADA)));
+            () -> new DrinkableItem((new Item.Properties()).stacksTo(16).food(ModFoods.PINA_COLADA), true, false));
     public static final RegistryObject<Item> COCONUT_PRAWN =  ITEMS.register("coconut_prawn",
             () -> new Item(new Item.Properties().food(ModFoods.COCONUT_PRAWN)));
     public static final RegistryObject<Item> PRAWN_NIGIRI =  ITEMS.register("prawn_nigiri",

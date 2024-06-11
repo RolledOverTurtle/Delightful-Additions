@@ -3,8 +3,10 @@ package net.rolledoverturtle.delightfuladditions.data;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
@@ -143,18 +145,18 @@ public class ModRecipes extends RecipeProvider {
         smelting_meat_lover_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
         smelting_meat_lover_pizza.save(consumer);
 
-        /* SimpleCookingRecipeBuilder smoking_cheese_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_CHEESE_PIZZA.get()), RecipeCategory.FOOD, ModItems.CHEESE_PIZZA.get(), 0.35F, 100);
+        SimpleCookingRecipeBuilder smoking_cheese_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_CHEESE_PIZZA.get()), RecipeCategory.FOOD, ModItems.CHEESE_PIZZA.get(), 0.35F, 100);
         smoking_cheese_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
-        smoking_cheese_pizza.save(consumer);
+        smoking_cheese_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_cheese_pizza"));
         SimpleCookingRecipeBuilder smoking_pepperoni_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_PEPPERONI_PIZZA.get()), RecipeCategory.FOOD, ModItems.PEPPERONI_PIZZA.get(), 0.35F, 100);
         smoking_pepperoni_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
-        smoking_pepperoni_pizza.save(consumer);
+        smoking_pepperoni_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_pepperoni_pizza"));
         SimpleCookingRecipeBuilder smoking_veggie_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_VEGGIE_PIZZA.get()), RecipeCategory.FOOD, ModItems.VEGGIE_PIZZA.get(), 0.35F, 100);
         smoking_veggie_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
-        smoking_veggie_pizza.save(consumer);
+        smoking_veggie_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_veggie_pizza"));
         SimpleCookingRecipeBuilder smoking_meat_lover_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_MEAT_LOVER_PIZZA.get()), RecipeCategory.FOOD, ModItems.MEAT_LOVER_PIZZA.get(), 0.35F, 100);
         smoking_meat_lover_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
-        smoking_meat_lover_pizza.save(consumer); */
+        smoking_meat_lover_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_meat_lover_pizza")); 
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.CHEESE_WHEEL.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.CHEESE.get(), 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.CHEESE_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.CHEESE_PIZZA_SLICE.get(), 4).build(consumer);
