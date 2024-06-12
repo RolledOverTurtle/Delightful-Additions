@@ -639,5 +639,35 @@
     },
     "done": true
   },
+  "delightfuladditions:recipes/food/pina_colada": {
+    "criteria": {
+      "has_coconut": "2024-06-12 20:39:44 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/sweet_sour_chicken_with_rice": {
+    "criteria": {
+      "has_sweet_sour_sauce": "2024-06-12 20:39:46 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/sweet_sour_coconut_prawns_with_rice": {
+    "criteria": {
+      "has_sweet_sour_sauce": "2024-06-12 20:39:46 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2024-06-12 20:41:07 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2024-06-12 20:41:07 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

@@ -28,7 +28,7 @@ public class ModFoods {
     public static final FoodProperties HAWAIIAN_PIZZA_SLICE = new FoodProperties.Builder().nutrition(8)
             .saturationMod(0.7f).meat().build();
 
-    public static final FoodProperties PINA_COLADA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.LUCK, 3600, 0), 1.0F).alwaysEat().build();
+    public static final FoodProperties PINA_COLADA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.LUCK, 2400, 0), 1.0F).alwaysEat().build();
 
     public static final FoodProperties PINEAPPLE_SLICE = new FoodProperties.Builder().nutrition(2)
             .saturationMod(0.3f).build();
@@ -45,7 +45,7 @@ public class ModFoods {
     public static final FoodProperties PRAWN_NIGIRI = new FoodProperties.Builder().nutrition(7)
             .saturationMod(0.6f).build();
     public static final FoodProperties TROPICAL_FRIED_RICE = new FoodProperties.Builder().nutrition(7)
-            .saturationMod(0.4f).effect(new MobEffectInstance(ModEffects.COMFORT.get(), 600, 0), 1.0F).build();
+            .saturationMod(0.4f).effect(new MobEffectInstance(ModEffects.COMFORT.get(), 1200, 0), 1.0F).build();
     public static final FoodProperties SWEET_SOUR_CHICKEN_WITH_RICE = new FoodProperties.Builder().nutrition(12)
             .saturationMod(0.8f).effect(new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3600, 0), 1.0F).meat().build();
     public static final FoodProperties SWEET_SOUR_COCONUT_PRAWNS_WITH_RICE = new FoodProperties.Builder().nutrition(14)

@@ -144,6 +144,12 @@ public class ModRecipes extends RecipeProvider {
         SimpleCookingRecipeBuilder smelting_meat_lover_pizza = SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_MEAT_LOVER_PIZZA.get()), RecipeCategory.FOOD, ModItems.MEAT_LOVER_PIZZA.get(), 0.35F, 200);
         smelting_meat_lover_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
         smelting_meat_lover_pizza.save(consumer);
+        SimpleCookingRecipeBuilder smelting_hawaiian_pizza = SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_HAWAIIAN_PIZZA.get()), RecipeCategory.FOOD, ModItems.HAWAIIAN_PIZZA.get(), 0.35F, 200);
+        smelting_hawaiian_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
+        smelting_hawaiian_pizza.save(consumer);
+        SimpleCookingRecipeBuilder smelting_prawn = SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.PRAWN.get()), RecipeCategory.FOOD, ModItems.COOKED_PRAWN.get(), 0.35F, 200);
+        smelting_prawn.unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()));
+        smelting_prawn.save(consumer);
 
         SimpleCookingRecipeBuilder smoking_cheese_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_CHEESE_PIZZA.get()), RecipeCategory.FOOD, ModItems.CHEESE_PIZZA.get(), 0.35F, 100);
         smoking_cheese_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
@@ -156,7 +162,17 @@ public class ModRecipes extends RecipeProvider {
         smoking_veggie_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_veggie_pizza"));
         SimpleCookingRecipeBuilder smoking_meat_lover_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_MEAT_LOVER_PIZZA.get()), RecipeCategory.FOOD, ModItems.MEAT_LOVER_PIZZA.get(), 0.35F, 100);
         smoking_meat_lover_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
-        smoking_meat_lover_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_meat_lover_pizza")); 
+        smoking_meat_lover_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_meat_lover_pizza"));
+        SimpleCookingRecipeBuilder smoking_hawaiian_pizza = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.RAW_HAWAIIAN_PIZZA.get()), RecipeCategory.FOOD, ModItems.HAWAIIAN_PIZZA.get(), 0.35F, 100);
+        smoking_hawaiian_pizza.unlockedBy("has_cheese", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHEESE.get()));
+        smoking_hawaiian_pizza.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_hawaiian_pizza"));
+        SimpleCookingRecipeBuilder smoking_prawn = SimpleCookingRecipeBuilder.smoking(Ingredient.of(ModItems.PRAWN.get()), RecipeCategory.FOOD, ModItems.COOKED_PRAWN.get(), 0.35F, 100);
+        smoking_prawn.unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()));
+        smoking_prawn.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "smoking_prawn"));
+
+        SimpleCookingRecipeBuilder campfireCooking_prawn = SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ModItems.PRAWN.get()), RecipeCategory.FOOD, ModItems.COOKED_PRAWN.get(), 0.35F, 200);
+        campfireCooking_prawn.unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()));
+        campfireCooking_prawn.save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "campfire_cooking_prawn"));
 
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.CHEESE_WHEEL.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.CHEESE.get(), 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.CHEESE_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.CHEESE_PIZZA_SLICE.get(), 4).build(consumer);
