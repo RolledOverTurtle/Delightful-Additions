@@ -26,6 +26,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PINEAPPLE_CROP);
 
         makePineappleCrop((CropBlock) ModBlocks.PINEAPPLE_CROP.get(), "pineapple_stage_", "pineapple_stage_");
+
+        simpleBlockWithItem(ModBlocks.CHEESE_VAT.get(),
+                new ModelFile.UncheckedModelFile("block/cheese_vat"));
+
+        // simpleBlockWithItem(ModBlocks.CHEESE_VAT.get(),
+                //new ModelFile.UncheckedModelFile(modLoc("block/cheese_vat")));
     }
 
     public void makePineappleCrop(CropBlock block, String modelName, String textureName) {

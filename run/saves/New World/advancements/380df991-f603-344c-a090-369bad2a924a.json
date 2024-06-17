@@ -669,5 +669,143 @@
     },
     "done": true
   },
+  "delightfuladditions:recipes/food/prawn_cocktail": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/coconut_prawn": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/tropical_fried_rice": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/smoking_prawn": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/cooked_prawn": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/campfire_cooking_prawn": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/prawn_nigiri": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/moqueca": {
+    "criteria": {
+      "has_prawn": "2024-06-13 06:39:53 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/milk_bottle": {
+    "criteria": {
+      "has_milk_bucket": "2024-06-17 01:06:44 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/hot_cocoa": {
+    "criteria": {
+      "has_any_ingredient": "2024-06-17 01:06:44 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/pumpkin_soup": {
+    "criteria": {
+      "has_any_ingredient": "2024-06-17 01:06:44 +0100"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/glow_berry_custard": {
+    "criteria": {
+      "has_any_ingredient": "2024-06-17 01:06:44 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/smoking_pepperoni_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/raw_hawaiian_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/hawaiian_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/pepperoni_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/smoking_veggie_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/smoking_meat_lover_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/smoking_cheese_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/smoking_hawaiian_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "delightfuladditions:recipes/food/meat_lover_pizza": {
+    "criteria": {
+      "has_cheese": "2024-06-17 01:06:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_wood": {
+    "criteria": {
+      "has_log": "2024-06-17 02:08:06 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_logs": "2024-06-17 02:08:06 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

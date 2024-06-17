@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
+import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -17,6 +18,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MEAT_LOVER_PIZZA.get()))
                     .title(Component.translatable("creativetab.delightful_additions_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModBlocks.CHEESE_VAT.get());
 
                         output.accept(ModItems.CHEESE_PIZZA_SLICE.get());
                         output.accept(ModItems.PEPPERONI_PIZZA_SLICE.get());

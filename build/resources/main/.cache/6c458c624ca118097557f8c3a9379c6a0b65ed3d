@@ -1,8 +1,9 @@
-// 1.20.1	2024-06-08T06:34:02.6389885	Item Models: delightfuladditions
+// 1.20.1	2024-06-17T01:53:53.3265244	Item Models: delightfuladditions
 a03c129f3cc07cdc98cba1d44e6774372df3bb6e assets/delightfuladditions/models/item/cheese.json
 3d43e69308adb14bb4f68444ddd75169527067d7 assets/delightfuladditions/models/item/cheese_pizza.json
 3ce6a4664b8f04d4c3c732bd7edd7563a720ece9 assets/delightfuladditions/models/item/cheese_pizza_slice.json
 aa293a506302410975b919241711243a40ef5e06 assets/delightfuladditions/models/item/cheese_sandwich.json
+23010176e1307ef30dd28c8c81bcf48bec9e4d1c assets/delightfuladditions/models/item/cheese_vat.json
 c805567d2c80ed804be192ced900d4fd9e46f663 assets/delightfuladditions/models/item/cheese_wheel.json
 825534712740369b4947b4bfaac6fc0ecb73e79d assets/delightfuladditions/models/item/coconut.json
 a1a7535ce10c62b4e0926a467e5e33381a3bb557 assets/delightfuladditions/models/item/coconut_husk.json

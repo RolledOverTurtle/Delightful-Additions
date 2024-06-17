@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
+import net.rolledoverturtle.delightfuladditions.item.custom.FuelItem;
 import net.rolledoverturtle.delightfuladditions.item.custom.PinaColadaItem;
 import vectorwing.farmersdelight.common.FoodValues;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
@@ -67,7 +68,7 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_PRAWN = ITEMS.register("cooked_prawn",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_PRAWN)));
     public static final RegistryObject<Item> COCONUT_HUSK = ITEMS.register("coconut_husk",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(), 100));
     public static final RegistryObject<Item> COCONUT = ITEMS.register("coconut",
             () -> new ConsumableItem(new Item.Properties().craftRemainder(ModItems.COCONUT_HUSK.get()).food(ModFoods.COCONUT)));
 

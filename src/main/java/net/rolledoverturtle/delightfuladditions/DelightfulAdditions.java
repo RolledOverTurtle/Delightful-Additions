@@ -1,6 +1,7 @@
 package net.rolledoverturtle.delightfuladditions;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.CreativeModeTabRegistry;
@@ -15,8 +16,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rolledoverturtle.delightfuladditions.block.ModBlockEntityTypes;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
+import net.rolledoverturtle.delightfuladditions.block.entity.ModBlockEntities;
 import net.rolledoverturtle.delightfuladditions.item.ModCreativeModeTabs;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
+import net.rolledoverturtle.delightfuladditions.screen.CheeseVatMenu;
+import net.rolledoverturtle.delightfuladditions.screen.CheeseVatScreen;
+import net.rolledoverturtle.delightfuladditions.screen.ModMenuTypes;
 import org.slf4j.Logger;
 import vectorwing.farmersdelight.FarmersDelight;
 
@@ -36,6 +41,9 @@ public class DelightfulAdditions
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         ModBlockEntityTypes.register(modEventBus);
 
@@ -72,8 +80,9 @@ public class DelightfulAdditions
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
+
+            MenuScreens.register(ModMenuTypes.CHEESE_VAT_MENU.get(), CheeseVatScreen::new);
 
         }
     }

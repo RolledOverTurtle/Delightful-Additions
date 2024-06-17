@@ -46,6 +46,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.PINEAPPLE_CROP.get(), createCropDrops(ModBlocks.PINEAPPLE_CROP.get(),
                 ModItems.PINEAPPLE.get(), ModItems.PINEAPPLE_SLICES.get(), lootitemcondition$builder));
+
+        this.dropSelf(ModBlocks.CHEESE_VAT.get());
     }
 
 

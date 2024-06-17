@@ -3,11 +3,15 @@ package net.rolledoverturtle.delightfuladditions.data;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
+import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -57,11 +61,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEET_SOUR_SAUCE);
         simpleItem(ModItems.VINEGAR);
 
+        evenSimplerBlockItem(ModBlocks.CHEESE_VAT);
+        // simpleBlockItemBlockTexture(ModBlocks.CHEESE_VAT);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(DelightfulAdditions.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(DelightfulAdditions.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(DelightfulAdditions.MOD_ID,"block/" + item.getId().getPath()));
     }
 }

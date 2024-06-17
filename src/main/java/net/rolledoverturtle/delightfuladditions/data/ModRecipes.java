@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
+import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
@@ -64,6 +65,17 @@ public class ModRecipes extends RecipeProvider {
                 .unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()))
                 .save(consumer);
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESE_VAT.get())
+                .pattern("P  P")
+                .pattern("PCP")
+                .pattern("ISI")
+                .define('P', Items.OAK_PLANKS)
+                .define('C', Items.CAULDRON)
+                .define('I', Items.IRON_INGOT)
+                .define('S', Items.OAK_SLAB)
+                .unlockedBy("has_iron", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
+                .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, RAW_CHEESE_PIZZA.get())
                 .pattern(" T ")
@@ -181,6 +193,7 @@ public class ModRecipes extends RecipeProvider {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.MEAT_LOVER_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.MEAT_LOVER_PIZZA_SLICE.get(), 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.HAWAIIAN_PIZZA.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.HAWAIIAN_PIZZA_SLICE.get(), 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.PINEAPPLE.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.PINEAPPLE_SLICES.get(), 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.COCONUT_HUSK.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.BOWL, 1).build(consumer);
 
         //(ItemLike) vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get(), 2).build(consumer);
 
