@@ -58,7 +58,7 @@ public class CheeseVatBlock extends BaseEntityBlock {
         if(!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
             if(entity instanceof CheeseVatEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CheeseVatEntity)entity, pPos); // this line wont work in above 1.20.1 !
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CheeseVatEntity)entity, pPos); // this line won't work in above 1.20.1 !
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }

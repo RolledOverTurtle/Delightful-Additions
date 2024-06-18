@@ -57,7 +57,7 @@ public class PineappleCropBlock extends CropBlock {
     }
 
     @Override
-    public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
+    public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) { // this needs adding
         if (!pLevel.isAreaLoaded(pPos, 1)) return;
         if (pLevel.getRawBrightness(pPos, 0) >= 9) {
             int currentAge = this.getAge(pState);
@@ -92,7 +92,7 @@ public class PineappleCropBlock extends CropBlock {
     }
 
     @Override
-    public void growCrops(Level pLevel, BlockPos pPos, BlockState pState) {
+    public void growCrops(Level pLevel, BlockPos pPos, BlockState pState) {   // add more here
         int nextAge = this.getAge(pState) + this.getBonemealAgeIncrease(pLevel);
         int maxAge = this.getMaxAge();
         if(nextAge > maxAge) {
@@ -115,4 +115,4 @@ public class PineappleCropBlock extends CropBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(AGE);
     }
-}
+} 

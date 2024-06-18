@@ -23,12 +23,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.PINEAPPLE_CROP);
+        //blockWithItem(ModBlocks.PINEAPPLE_CROP);
 
         makePineappleCrop((CropBlock) ModBlocks.PINEAPPLE_CROP.get(), "pineapple_stage_", "pineapple_stage_");
 
         simpleBlockWithItem(ModBlocks.CHEESE_VAT.get(),
-                new ModelFile.UncheckedModelFile("block/cheese_vat"));
+                new ModelFile.UncheckedModelFile(modLoc("block/cheese_vat")));
 
         // simpleBlockWithItem(ModBlocks.CHEESE_VAT.get(),
                 //new ModelFile.UncheckedModelFile(modLoc("block/cheese_vat")));
@@ -50,7 +50,5 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
-    public ModelFile cubeAll(Block block) {
-        return null;
-    }
+
 }

@@ -67,7 +67,7 @@ public class ModRecipes extends RecipeProvider {
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESE_VAT.get())
-                .pattern("P  P")
+                .pattern("P P")
                 .pattern("PCP")
                 .pattern("ISI")
                 .define('P', Items.OAK_PLANKS)

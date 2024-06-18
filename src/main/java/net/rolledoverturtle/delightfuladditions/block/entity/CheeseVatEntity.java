@@ -172,6 +172,7 @@ public class CheeseVatEntity extends BlockEntity implements MenuProvider {
     }
 
     private void increaseCraftingProgress() {
+        if(Math.random() > 0.2F) return;
         progress++;
     }
 
