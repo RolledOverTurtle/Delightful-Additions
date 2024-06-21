@@ -66,19 +66,19 @@ public class ModRecipes extends RecipeProvider {
                 .unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, vectorwing.farmersdelight.common.registry.ModItems.ROPE.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, vectorwing.farmersdelight.common.registry.ModItems.ROPE.get())
                 .requires(ModItems.COCONUT_HUSK.get())
                 .requires(ModItems.COCONUT_HUSK.get())
                 .unlockedBy("has_coconut_husk", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COCONUT_HUSK.get()))
-                .save(consumer);
+                .save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID,"rope_from_coconut"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, vectorwing.farmersdelight.common.registry.ModItems.CANVAS.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, vectorwing.farmersdelight.common.registry.ModItems.CANVAS.get())
                 .requires(ModItems.COCONUT_HUSK.get())
                 .requires(ModItems.COCONUT_HUSK.get())
                 .requires(ModItems.COCONUT_HUSK.get())
                 .requires(ModItems.COCONUT_HUSK.get())
                 .unlockedBy("has_coconut_husk", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COCONUT_HUSK.get()))
-                .save(consumer);
+                .save(consumer, new ResourceLocation(DelightfulAdditions.MOD_ID, "canvas_from_coconut"));
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESE_VAT.get())
