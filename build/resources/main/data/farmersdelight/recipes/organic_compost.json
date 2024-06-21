@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "delightfuladditions:coconut_husk"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "M": {
+      "item": "minecraft:bone_meal"
+    },
+    "T": {
+      "item": "farmersdelight:tree_bark"
+    }
+  },
+  "pattern": [
+    "DCC",
+    "MMT",
+    "TTT"
+  ],
+  "result": {
+    "item": "farmersdelight:organic_compost"
+  },
+  "show_notification": true
+}

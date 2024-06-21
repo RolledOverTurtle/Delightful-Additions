@@ -6,6 +6,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.Tags;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
@@ -63,6 +64,20 @@ public class ModRecipes extends RecipeProvider {
                 .requires(ModItems.COOKED_PRAWN.get())
                 .requires(vectorwing.farmersdelight.common.registry.ModItems.COOKED_RICE.get())
                 .unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, vectorwing.farmersdelight.common.registry.ModItems.ROPE.get())
+                .requires(ModItems.COCONUT_HUSK.get())
+                .requires(ModItems.COCONUT_HUSK.get())
+                .unlockedBy("has_coconut_husk", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COCONUT_HUSK.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, vectorwing.farmersdelight.common.registry.ModItems.CANVAS.get())
+                .requires(ModItems.COCONUT_HUSK.get())
+                .requires(ModItems.COCONUT_HUSK.get())
+                .requires(ModItems.COCONUT_HUSK.get())
+                .requires(ModItems.COCONUT_HUSK.get())
+                .unlockedBy("has_coconut_husk", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COCONUT_HUSK.get()))
                 .save(consumer);
 
 
@@ -142,6 +157,17 @@ public class ModRecipes extends RecipeProvider {
                 .define('P', ModItems.COOKED_PRAWN.get())
                 .define('B', Items.GLASS_BOTTLE)
                 .unlockedBy("has_prawn", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PRAWN.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, vectorwing.farmersdelight.common.registry.ModItems.ORGANIC_COMPOST.get())
+                .pattern("DCC")
+                .pattern("MMT")
+                .pattern("TTT")
+                .define('D', Items.DIRT)
+                .define('C', ModItems.COCONUT_HUSK.get())
+                .define('M', Items.BONE_MEAL)
+                .define('T', vectorwing.farmersdelight.common.registry.ModItems.TREE_BARK.get())
+                .unlockedBy("has_coconut_husk", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COCONUT_HUSK.get()))
                 .save(consumer);
 
         SimpleCookingRecipeBuilder smelting_cheese_pizza = SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_CHEESE_PIZZA.get()), RecipeCategory.FOOD, ModItems.CHEESE_PIZZA.get(), 0.35F, 200);
