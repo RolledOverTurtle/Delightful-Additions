@@ -59,6 +59,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SWEET_SOUR_SAUCE.get());
                         output.accept(ModItems.VINEGAR.get());
 
+                        output.accept(ModBlocks.COCONUT_LOG.get());
+                        output.accept(ModBlocks.COCONUT_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_COCONUT_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_COCONUT_WOOD.get());
+
+                        output.accept(ModBlocks.COCONUT_PLANKS.get());
+                        output.accept(ModBlocks.COCONUT_LEAVES.get());
+
+
 
 
 

@@ -41,6 +41,13 @@
 
   "block.delightfuladditions.cheese_vat": "Cheese Vat",
 
+  "block.delightfuladditions.coconut_log": "Coconut Log",
+  "block.delightfuladditions.coconut_planks": "Coconut Planks",
+  "block.delightfuladditions.coconut_wood": "Coconut Wood",
+  "block.delightfuladditions.stripped_coconut_log": "Stripped Coconut Log",
+  "block.delightfuladditions.stripped_coconut_wood": "Stripped Coconut Wood",
+  "block.delightfuladditions.coconut_leaves": "Coconut Leaves",
+
 
   "creativetab.delightful_additions_tab": "Delightful Additions"
 }

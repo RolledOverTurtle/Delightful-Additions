@@ -48,6 +48,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 ModItems.PINEAPPLE.get(), ModItems.PINEAPPLE_SLICES.get(), lootitemcondition$builder));
 
         this.dropSelf(ModBlocks.CHEESE_VAT.get());
+
+        this.dropSelf(ModBlocks.COCONUT_LOG.get());
+        this.dropSelf(ModBlocks.COCONUT_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_COCONUT_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_COCONUT_WOOD.get());
+        this.dropSelf(ModBlocks.COCONUT_PLANKS.get());
+
+        this.add(ModBlocks.COCONUT_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CHEESE_VAT.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: Change to Sapling!
+
     }
 
 
