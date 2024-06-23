@@ -2,6 +2,7 @@ package net.rolledoverturtle.delightfuladditions;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.CreativeModeTabRegistry;
@@ -22,6 +23,7 @@ import net.rolledoverturtle.delightfuladditions.item.ModItems;
 import net.rolledoverturtle.delightfuladditions.screen.CheeseVatMenu;
 import net.rolledoverturtle.delightfuladditions.screen.CheeseVatScreen;
 import net.rolledoverturtle.delightfuladditions.screen.ModMenuTypes;
+import net.rolledoverturtle.delightfuladditions.util.ModWoodTypes;
 import org.slf4j.Logger;
 import vectorwing.farmersdelight.FarmersDelight;
 
@@ -77,10 +79,11 @@ public class DelightfulAdditions
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(ModWoodTypes.COCONUT);
+
 
             MenuScreens.register(ModMenuTypes.CHEESE_VAT_MENU.get(), CheeseVatScreen::new);
 

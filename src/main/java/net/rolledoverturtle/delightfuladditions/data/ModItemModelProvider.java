@@ -61,6 +61,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEET_SOUR_SAUCE);
         simpleItem(ModItems.VINEGAR);
 
+        simpleItem(ModItems.COCONUT_SIGN);
+        simpleItem(ModItems.COCONUT_HANGING_SIGN);
+
         evenSimplerBlockItem(ModBlocks.CHEESE_VAT);
         // simpleBlockItemBlockTexture(ModBlocks.CHEESE_VAT);
 

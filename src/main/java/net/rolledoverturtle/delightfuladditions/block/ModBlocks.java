@@ -17,10 +17,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 // import net.rolledoverturtle.delightfuladditions.block.custom.MudBrickStoveBlock;
-import net.rolledoverturtle.delightfuladditions.block.custom.CheeseVatBlock;
-import net.rolledoverturtle.delightfuladditions.block.custom.ModFlammableRotatedPillarBlock;
-import net.rolledoverturtle.delightfuladditions.block.custom.PineappleCropBlock;
+import net.rolledoverturtle.delightfuladditions.block.custom.*;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
+import net.rolledoverturtle.delightfuladditions.util.ModWoodTypes;
 import vectorwing.farmersdelight.common.block.PieBlock;
 import vectorwing.farmersdelight.common.block.StoveBlock;
 
@@ -89,6 +88,16 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+    public static final RegistryObject<Block> COCONUT_SIGN = BLOCKS.register("coconut_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.COCONUT));
+    public static final RegistryObject<Block> COCONUT_WALL_SIGN = BLOCKS.register("coconut_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.COCONUT));
+
+    public static final RegistryObject<Block> COCONUT_HANGING_SIGN = BLOCKS.register("coconut_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.COCONUT));
+    public static final RegistryObject<Block> COCONUT_WALL_HANGING_SIGN = BLOCKS.register("coconut_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.COCONUT));
 
     // public static final RegistryObject<Block> MUD_BRICK_STOVE = registerBlock("mud_brick_stove",
     // () -> new MudBrickStoveBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).lightLevel(litBlockEmission(13))));

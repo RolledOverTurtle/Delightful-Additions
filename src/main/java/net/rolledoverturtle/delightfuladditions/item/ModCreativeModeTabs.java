@@ -66,6 +66,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.COCONUT_PLANKS.get());
                         output.accept(ModBlocks.COCONUT_LEAVES.get());
+                        output.accept(ModBlocks.COCONUT_SIGN.get());
+                        output.accept(ModBlocks.COCONUT_HANGING_SIGN.get());
 
 
 

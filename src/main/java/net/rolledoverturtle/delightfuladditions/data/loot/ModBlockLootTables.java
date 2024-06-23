@@ -58,6 +58,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.COCONUT_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CHEESE_VAT.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: Change to Sapling!
 
+        this.add(ModBlocks.COCONUT_SIGN.get(), block ->
+                createSingleItemTable(ModItems.COCONUT_SIGN.get()));
+        this.add(ModBlocks.COCONUT_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.COCONUT_SIGN.get()));
+        this.add(ModBlocks.COCONUT_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.COCONUT_HANGING_SIGN.get()));
+        this.add(ModBlocks.COCONUT_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.COCONUT_HANGING_SIGN.get()));
     }
 
 

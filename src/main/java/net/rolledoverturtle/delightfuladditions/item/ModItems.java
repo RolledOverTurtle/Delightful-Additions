@@ -1,8 +1,6 @@
 package net.rolledoverturtle.delightfuladditions.item;
 
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -95,6 +93,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)));
     public static final RegistryObject<Item> SWEET_SOUR_SAUCE = ITEMS.register("sweet_sour_sauce",
             () -> new ConsumableItem(new Item.Properties().stacksTo(16).craftRemainder(Items.BOWL).food(ModFoods.SWEET_SOUR_SAUCE)));
+
+    public static final RegistryObject<Item> COCONUT_SIGN = ITEMS.register("coconut_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.COCONUT_SIGN.get(), ModBlocks.COCONUT_WALL_SIGN.get()));
+    public static final RegistryObject<Item> COCONUT_HANGING_SIGN = ITEMS.register("coconut_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.COCONUT_HANGING_SIGN.get(), ModBlocks.COCONUT_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
 
 
