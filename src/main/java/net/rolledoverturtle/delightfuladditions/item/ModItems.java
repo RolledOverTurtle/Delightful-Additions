@@ -7,7 +7,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rolledoverturtle.delightfuladditions.DelightfulAdditions;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
+import net.rolledoverturtle.delightfuladditions.block.entity.custom.ModBoatEntity;
 import net.rolledoverturtle.delightfuladditions.item.custom.FuelItem;
+import net.rolledoverturtle.delightfuladditions.item.custom.ModBoatItem;
 import net.rolledoverturtle.delightfuladditions.item.custom.PinaColadaItem;
 import vectorwing.farmersdelight.common.FoodValues;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
@@ -98,6 +100,11 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.COCONUT_SIGN.get(), ModBlocks.COCONUT_WALL_SIGN.get()));
     public static final RegistryObject<Item> COCONUT_HANGING_SIGN = ITEMS.register("coconut_hanging_sign",
             () -> new HangingSignItem(ModBlocks.COCONUT_HANGING_SIGN.get(), ModBlocks.COCONUT_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> COCONUT_BOAT = ITEMS.register("coconut_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.COCONUT, new Item.Properties()));
+    public static final RegistryObject<Item> COCONUT_CHEST_BOAT = ITEMS.register("coconut_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.COCONUT, new Item.Properties()));
 
 
 

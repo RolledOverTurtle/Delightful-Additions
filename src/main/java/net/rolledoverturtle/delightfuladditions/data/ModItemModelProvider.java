@@ -64,8 +64,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.COCONUT_SIGN);
         simpleItem(ModItems.COCONUT_HANGING_SIGN);
 
+        simpleItem(ModItems.COCONUT_BOAT);
+        simpleItem(ModItems.COCONUT_CHEST_BOAT);
+
         evenSimplerBlockItem(ModBlocks.CHEESE_VAT);
-        // simpleBlockItemBlockTexture(ModBlocks.CHEESE_VAT);
 
     }
 

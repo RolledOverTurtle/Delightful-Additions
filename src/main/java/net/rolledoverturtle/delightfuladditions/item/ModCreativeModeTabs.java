@@ -69,6 +69,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.COCONUT_SIGN.get());
                         output.accept(ModBlocks.COCONUT_HANGING_SIGN.get());
 
+                        output.accept(ModItems.COCONUT_BOAT.get());
+                        output.accept(ModItems.COCONUT_CHEST_BOAT.get());
+
 
 
 

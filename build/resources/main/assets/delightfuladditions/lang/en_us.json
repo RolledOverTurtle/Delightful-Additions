@@ -51,6 +51,9 @@
   "block.delightfuladditions.coconut_sign": "Coconut Sign",
   "block.delightfuladditions.coconut_hanging_sign": "Coconut Hanging Sign",
 
+  "entity.delightfuladditions.mod_chest_boat": "Boat With Chest",
+  "entity.delightfuladditions.mod_boat": "Boat",
+
 
   "creativetab.delightful_additions_tab": "Delightful Additions"
 }

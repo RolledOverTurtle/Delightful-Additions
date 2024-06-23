@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-23T03:35:10.8909982	Item Models: delightfuladditions
+// 1.20.1	2024-06-23T05:42:27.9244873	Item Models: delightfuladditions
 a03c129f3cc07cdc98cba1d44e6774372df3bb6e assets/delightfuladditions/models/item/cheese.json
 3d43e69308adb14bb4f68444ddd75169527067d7 assets/delightfuladditions/models/item/cheese_pizza.json
 3ce6a4664b8f04d4c3c732bd7edd7563a720ece9 assets/delightfuladditions/models/item/cheese_pizza_slice.json
@@ -6,6 +6,8 @@ aa293a506302410975b919241711243a40ef5e06 assets/delightfuladditions/models/item/
 23010176e1307ef30dd28c8c81bcf48bec9e4d1c assets/delightfuladditions/models/item/cheese_vat.json
 c805567d2c80ed804be192ced900d4fd9e46f663 assets/delightfuladditions/models/item/cheese_wheel.json
 825534712740369b4947b4bfaac6fc0ecb73e79d assets/delightfuladditions/models/item/coconut.json
+549f4198d38b7741eafb9b842cbe5d48a8129dbd assets/delightfuladditions/models/item/coconut_boat.json
+cc2942a9ea0a55259c09bf6951853feb6756fbb2 assets/delightfuladditions/models/item/coconut_chest_boat.json
 58c4683a0f8325311f3bef3254b1fed2c7e87b43 assets/delightfuladditions/models/item/coconut_hanging_sign.json
 a1a7535ce10c62b4e0926a467e5e33381a3bb557 assets/delightfuladditions/models/item/coconut_husk.json
 c8e12bd9db089be274ba200529fa13e70323a8a2 assets/delightfuladditions/models/item/coconut_prawn.json

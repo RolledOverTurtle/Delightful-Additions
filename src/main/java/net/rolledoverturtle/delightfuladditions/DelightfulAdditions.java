@@ -3,6 +3,7 @@ package net.rolledoverturtle.delightfuladditions;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.CreativeModeTabRegistry;
@@ -18,6 +19,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rolledoverturtle.delightfuladditions.block.ModBlockEntityTypes;
 import net.rolledoverturtle.delightfuladditions.block.ModBlocks;
 import net.rolledoverturtle.delightfuladditions.block.entity.ModBlockEntities;
+import net.rolledoverturtle.delightfuladditions.block.entity.ModEntities;
+import net.rolledoverturtle.delightfuladditions.block.entity.client.ModBoatRenderer;
 import net.rolledoverturtle.delightfuladditions.item.ModCreativeModeTabs;
 import net.rolledoverturtle.delightfuladditions.item.ModItems;
 import net.rolledoverturtle.delightfuladditions.screen.CheeseVatMenu;
@@ -84,6 +87,8 @@ public class DelightfulAdditions
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.COCONUT);
 
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
             MenuScreens.register(ModMenuTypes.CHEESE_VAT_MENU.get(), CheeseVatScreen::new);
 
